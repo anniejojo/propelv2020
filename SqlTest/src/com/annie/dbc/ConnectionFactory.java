@@ -8,7 +8,7 @@ import java.util.Properties;
 
 
 public class ConnectionFactory {
-	//declare the connection variable
+	//Declaring the connection
 		static Connection connection=null;
 		
 		public static Connection getconnection()throws Exception
@@ -46,7 +46,9 @@ public class ConnectionFactory {
 
 		public static void main(String[] args) throws Exception {
 			connection=ConnectionFactory.getconnection();
+			//to display the connection
 			System.out.println(connection);
+			//to display the connected to the database
 			System.out.println("connected to database");
 			
 
